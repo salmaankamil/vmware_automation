@@ -8,6 +8,8 @@ $dnsServers = "10.132.7.33"  # Replace with your DNS server addresses
 # Remove any existing IP addresses on the interface
 Get-NetIPAddress -InterfaceAlias $interfaceAlias -AddressFamily IPv4 | Remove-NetIPAddress -Confirm:$false
 
+Remove-NetRoute -DestinationPrefix 0.0.0.0/0 -Confirm:$false 
+
 # Assign the new static IP address
 New-NetIPAddress -InterfaceAlias $interfaceAlias -IPAddress $ipAddress -PrefixLength $prefixLength -DefaultGateway $defaultGateway
 
