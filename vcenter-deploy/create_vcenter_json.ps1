@@ -24,20 +24,20 @@ $vcenter_json = @"
         "network": {
             "ip_family": "ipv4",
             "mode": "static",
-            "system_name": "vcenter_fqdn_system_name",
+            "system_name": "$vcenter_fqdn_system_name",
             "ip": "vcenter_ip",
-            "prefix": "vcenter_prefix",
-            "gateway": "vcenter_gateway",
+            "prefix": "$vcenter_prefix",
+            "gateway": "$vcenter_gateway",
             "dns_servers": [
                 "$vcenter_dns_servers"
             ]
         },
         "os": {
-            "password": "vcenter_ssh_password",
+            "password": "$vcenter_ssh_password",
             "ssh_enable": true
         },
         "sso": {
-            "password": "$vcenter_ssh_password",
+            "password": "$vcenter_sso_password",
             "domain_name": "vsphere.local"
         }
     },
