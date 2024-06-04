@@ -1,5 +1,6 @@
 .\variables.ps1
 
+
 $vcenter_json = @"
 {
     "__version": "2.13.0",
