@@ -1,4 +1,4 @@
-.\variables.ps1
+. .\variables.ps1
 
 
 $vcenter_json = @"
