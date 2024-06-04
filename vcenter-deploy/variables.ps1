@@ -1,4 +1,4 @@
-$esxi_hostname = ""  #esx name or ip where vcenter will be deployed
+$esxi_hostname = " "  #esx name or ip where vcenter will be deployed
 $esxi_username = "root"   #esx username and password of the esx
 $esxi_password = "VMware123!"
 $deployment_network = ""
@@ -16,6 +16,6 @@ $vcenter_dns_servers = ""
 $vcenter_ssh_password = "VMware123!"
 
 $vcenter_sso_password = "VMware123!"
-$vcenter_sso_domain_name = vsphere.local
+$vcenter_sso_domain_name = "vsphere.local"
 
 $fliename = "create_vcenter_on_esxi.json"  # file to create
