@@ -1,4 +1,4 @@
-$esxi_hostname = " "  #esx name or ip where vcenter will be deployed
+$esxi_hostname = "10.131.192.47"  #esx name or ip where vcenter will be deployed
 $esxi_username = "root"   #esx username and password of the esx
 $esxi_password = "VMware123!"
 $deployment_network = "GS Labs Network"
