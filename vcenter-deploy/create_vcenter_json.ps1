@@ -73,9 +73,7 @@ $vcenter_json = @"
             "ceip_enabled": false
         }
     }
-}
-
-"@
+}"@
 
 # Define the output file path
 
