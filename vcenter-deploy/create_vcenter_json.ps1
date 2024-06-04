@@ -8,8 +8,8 @@ $vcenter_json = @"
     "new_vcsa": {
         "esxi": {
             "hostname": "$esxi_hostname",
-            "username": "$esxi_username",
-            "password": "$esxi_password",
+            "username": "root",
+            "password": "$esxi_username",
             "deployment_network": "$deployment_network",
             "datastore": "$datastore"
         },
@@ -24,8 +24,8 @@ $vcenter_json = @"
         "network": {
             "ip_family": "ipv4",
             "mode": "static",
-            "system_name": "$vcenter_fqdn_system_name",
-            "ip": "vcenter_ip",
+            "system_name": "vcenter.damudi.local",
+            "ip": "$vcenter_ip",
             "prefix": "$vcenter_prefix",
             "gateway": "$vcenter_gateway",
             "dns_servers": [
@@ -34,7 +34,8 @@ $vcenter_json = @"
         },
         "os": {
             "password": "$vcenter_ssh_password",
-            "ssh_enable": true
+            "ntp_servers": "time.nist.gov",
+            "ssh_enable": false
         },
         "sso": {
             "password": "$vcenter_sso_password",
