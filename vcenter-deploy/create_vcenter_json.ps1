@@ -9,7 +9,7 @@ $vcenter_json = @"
         "esxi": {
             "hostname": "$esxi_hostname",
             "username": "root",
-            "password": "$esxi_username",
+            "password": "$esxi_password",
             "deployment_network": "$deployment_network",
             "datastore": "$datastore"
         },
