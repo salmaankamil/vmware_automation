@@ -82,6 +82,6 @@ $filelocation =  Get-Location
 
 
 # Write the modified JSON string to the file
-$vcenter_json | Out-File -FilePath $filelocation\$fliename -Encoding UTF8
+$vcenter_json | Out-File -FilePath $filelocation\$fliename -Encoding ASCII
 
 
